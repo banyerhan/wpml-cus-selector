@@ -45,4 +45,9 @@ function nf_mon(){
         </li>
     </ul>
 </div>
+//------------------------------------------------------
+$language_code == mon;
+$country_flag_url == abc.com/abc.png;
+$native_name == myanmar;
+$default_locale == en_US;
 ?>
