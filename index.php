@@ -1,3 +1,4 @@
+<?php
 // Flag
 function wpml_shortcode_lang() {
  
@@ -44,4 +45,4 @@ function nf_mon(){
         </li>
     </ul>
 </div>
-
+?
