@@ -46,8 +46,14 @@ function nf_mon(){
     </ul>
 </div>
 //------------------------------------------------------
+
+// Others usage variable for wpml
 $language_code == mon;
 $country_flag_url == abc.com/abc.png;
 $native_name == myanmar;
 $default_locale == en_US;
+
+echo "You can asked more in Google... google is always welcome you... not like your gf...";
+
+echo "Thanks";
 ?>
