@@ -28,10 +28,12 @@ function nf_mon(){
         foreach( $languages as $l ){
             if(  $l['language_code']==mon ) { 
             // !$l[active] 
-                $items2 .= '<a href="' . $l['url'] . ' " class="lang_sel_sel icl-en"> MON </a>';
+                $items .= '<a href="' . $l['url'] . ' " class="lang_sel_sel icl-en"> MON </a>';
             }
             
         }
+    }else{
+     echo "Opps. Valid defined Language";
     }
  
     return $items2;
