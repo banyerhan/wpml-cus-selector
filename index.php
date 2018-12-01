@@ -14,11 +14,11 @@ function wpml_flag_lang() {
     return $translate;
 }
 add_shortcode( 'wpml_custom_lang', 'wpml_flag_lang' );
-
+?>
 // Usage 
 [wpml_custom_lang]
 //------------------------------------------------------
-
+<?php
 // Country Code 
 function nf_mon(){
     $languages = icl_get_languages('skip_missing=0');
@@ -38,7 +38,7 @@ function nf_mon(){
  
     return $items2;
 }
-
+?>
 // Usage
 <div id="lang">
     <ul>
@@ -50,17 +50,14 @@ function nf_mon(){
 
 //------------------------------------------------------
 // For Slider in Home or function.php 
-<?php if ( is_front_page() && ICL_LANGUAGE_CODE=='mm' ) : ?>
+<?php
+if ( is_front_page() && ICL_LANGUAGE_CODE=='mm' ) : 
+putRevSlider("home-default")
+endif; 
  
-<?php putRevSlider("home-default") ?>
- 
-<?php endif; ?>
- 
-<?php if ( is_front_page() && ICL_LANGUAGE_CODE=='en' ) : ?>
- 
-<?php putRevSlider("home-en") ?>
- 
-<?php endif; ?>
+if ( is_front_page() && ICL_LANGUAGE_CODE=='en' ) : 
+putRevSlider("home-en") 
+endif; 
 
 //------------------------------------------------------
 
