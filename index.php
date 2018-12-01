@@ -45,6 +45,21 @@ function nf_mon(){
         </li>
     </ul>
 </div>
+
+//------------------------------------------------------
+// For Slider in Home or function.php 
+<?php if ( is_front_page() && ICL_LANGUAGE_CODE=='mm' ) : ?>
+ 
+<?php putRevSlider("home-default") ?>
+ 
+<?php endif; ?>
+ 
+<?php if ( is_front_page() && ICL_LANGUAGE_CODE=='en' ) : ?>
+ 
+<?php putRevSlider("home-en") ?>
+ 
+<?php endif; ?>
+
 //------------------------------------------------------
 
 // Others usage variable for wpml
@@ -57,3 +72,5 @@ echo "You can asked more in Google... google is always welcome you... not like y
 
 echo "Thanks";
 ?>
+
+//------------------------------------------------------
