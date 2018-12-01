@@ -5,7 +5,7 @@ function wpml_flag_lang() {
     $languages = icl_get_languages('skip_missing=0');
  
     if( 1 < count( $languages ) ) {
-        $s = "";
+        $translate = "";
         foreach( (array)$languages as $language ) {
             $translate .= '<span><a href="' . $language['url'] . '"><img src="' . $language['country_flag_url'] . '" alt="" /> ' . $language['native_name'] . '</a></span> ';
         }
