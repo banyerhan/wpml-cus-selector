@@ -1,19 +1,19 @@
 <?php
 // Flag
-function wpml_shortcode_lang() {
+function wpml_flag_lang() {
  
     $languages = icl_get_languages('skip_missing=0');
  
     if( 1 < count( $languages ) ) {
         $s = "";
         foreach( (array)$languages as $language ) {
-            $s .= '<span><a href="' . $language['url'] . '"><img src="' . $language['country_flag_url'] . '" alt="" /> ' . $language['native_name'] . '</a></span> ';
+            $translate .= '<span><a href="' . $language['url'] . '"><img src="' . $language['country_flag_url'] . '" alt="" /> ' . $language['native_name'] . '</a></span> ';
         }
     }
  
-    return $s;
+    return $translate;
 }
-add_shortcode( 'wpml_custom_lang', 'wpml_shortcode_lang' );
+add_shortcode( 'wpml_custom_lang', 'wpml_flag_lang' );
 
 // Usage 
 [wpml_custom_lang]
