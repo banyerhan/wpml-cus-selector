@@ -53,7 +53,7 @@ function nf_mon(){
 <?php
 if ( is_front_page() && ICL_LANGUAGE_CODE=='mm' ) 
 {
-putRevSlider("home-default");
+putRevSlider("home-default"); //eg. do_shortcode in here!
 }
 endif; 
  
