@@ -51,12 +51,16 @@ function nf_mon(){
 //------------------------------------------------------
 // For Slider in Home or function.php 
 <?php
-if ( is_front_page() && ICL_LANGUAGE_CODE=='mm' ) : 
-putRevSlider("home-default")
+if ( is_front_page() && ICL_LANGUAGE_CODE=='mm' ) 
+{
+putRevSlider("home-default");
+}
 endif; 
  
-if ( is_front_page() && ICL_LANGUAGE_CODE=='en' ) : 
-putRevSlider("home-en") 
+if ( is_front_page() && ICL_LANGUAGE_CODE=='en' )
+{ 
+putRevSlider("home-en");
+}
 endif; 
 
 //------------------------------------------------------
@@ -64,7 +68,7 @@ endif;
 // Others usage variable for wpml
 $language_code == mon;
 $country_flag_url == abc.com/abc.png;
-$native_name == myanmar;
+$native_name == Myanmar;
 $default_locale == en_US;
 
 echo "You can asked more in Google... google is always welcome you... not like your gf...";
