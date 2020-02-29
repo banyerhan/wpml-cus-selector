@@ -62,8 +62,8 @@ function nf_mon(){
                 $items .'</a>';
                 } else
                 {
-                    $l['language_code']== 'zh-hant';
-                    $items .= '<a href="' . $l['url'] . ' " class="lang_sel_sel icl-en"> CN';
+                    $l['language_code']== 'mon';
+                    $items .= '<a href="' . $l['url'] . ' " class="lang_sel_sel icl-en"> MON';
                     // $items .=;
                     $items .'</a>';
                 }
