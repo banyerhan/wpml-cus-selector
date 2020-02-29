@@ -17,7 +17,7 @@ add_shortcode( 'wpml_custom_lang', 'wpml_flag_lang' );
 ?>
 // Usage 
 [wpml_flag_lang]
-//------------------------------------------------------
+//------------------------------------------------------ direct
 <?php
 // Country Code 
 function nf_mon(){
@@ -48,7 +48,34 @@ function nf_mon(){
     </ul>
 </div>
 
+//------------------------------------------------------ reverse 
+function nf_mon(){
+    $languages = icl_get_languages('skip_missing=0');
+ 
+    $items = "";
+    if( ! empty( $languages ) ) {
+        foreach( $languages as $l ){
+            if(  !$l['active'] ) { 
+                if ( $l['language_code']== 'en') {
+                $items .= '<a href="' . $l['url'] . ' " class="lang_sel_sel icl-en"> EN';
+                // $items .=;
+                $items .'</a>';
+                } else
+                {
+                    $l['language_code']== 'zh-hant';
+                    $items .= '<a href="' . $l['url'] . ' " class="lang_sel_sel icl-en"> CN';
+                    // $items .=;
+                    $items .'</a>';
+                }
+            } 
+            
+        }
+    }
+ 
+    return $items;
+}
 //------------------------------------------------------
+
 // For Slider in Home or function.php 
 <?php
 if ( is_front_page() && ICL_LANGUAGE_CODE=='mm' ) 
