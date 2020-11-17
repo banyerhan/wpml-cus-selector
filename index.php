@@ -16,7 +16,7 @@ function wpml_flag_lang() {
 add_shortcode( 'wpml_custom_lang', 'wpml_flag_lang' );
 ?>
 // Usage 
-[wpml_flag_lang]
+[wpml_custom_lang]
 //------------------------------------------------------ direct
 <?php
 // Country Code 
